@@ -41,6 +41,20 @@ describe("[orgs]", function() {
         );
     });
 
+    it("should successfully execute GET /user/orgs (getAll)",  function(next) {
+        client.orgs.getAll(
+            {
+                page: "Number",
+                per_page: "Number"
+            },
+            function(err, res) {
+                Assert.equal(err, null);
+                // other assertions go here
+                next();
+            }
+        );
+    });
+
     it("should successfully execute GET /orgs/:org (get)",  function(next) {
         client.orgs.get(
             {

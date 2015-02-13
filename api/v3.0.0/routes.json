@@ -1296,6 +1296,15 @@
             }
         },
 
+        "get-all": {
+            "url": "/user/orgs",
+            "method": "GET",
+            "params": {
+                "$page": null,
+                "$per_page": null
+            }
+        },
+
         "get": {
             "url": "/orgs/:org",
             "method": "GET",
