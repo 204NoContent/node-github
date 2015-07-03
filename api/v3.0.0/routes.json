@@ -1407,6 +1407,14 @@
             }
         },
 
+        "get-membership": {
+            "url": "/user/memberships/orgs/:org",
+            "method": "GET",
+            "params": {
+                "$org": null
+            }
+        },
+
         "get-public-members": {
             "url": "/orgs/:org/public_members",
             "method": "GET",

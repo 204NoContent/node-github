@@ -186,6 +186,19 @@ describe("[orgs]", function() {
         );
     });
 
+    it("should successfully execute GET /user/memberships/orgs/:org (getMembership)",  function(next) {
+        client.orgs.concealMembership(
+            {
+                org: "String"
+            },
+            function(err, res) {
+                Assert.equal(err, null);
+                // other assertions go here
+                next();
+            }
+        );
+    });
+
     it("should successfully execute GET /orgs/:org/teams (getTeams)",  function(next) {
         client.orgs.getTeams(
             {
