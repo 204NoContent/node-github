@@ -5,6 +5,7 @@ var fs = require("fs");
 var mime = require("mime");
 var Util = require("./util");
 var Url = require("url");
+var utf8 = require("utf8");
 
 /** section: github
  * class Client
@@ -507,7 +508,7 @@ var Client = module.exports = function(config) {
 
             var ret;
             try {
-                ret = res.data && JSON.parse(res.data);
+                ret = res.data && JSON.parse(utf8.encode(res.data));
             }
             catch (ex) {
                 if (callback)
