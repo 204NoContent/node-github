@@ -781,7 +781,7 @@ var Client = module.exports = function(config) {
                     if (res.statusCode >= 400 && res.statusCode < 600 || res.statusCode < 10) {
                         callCallback(new error.HttpError(data, res.statusCode));
                     } else {
-                        res.data = utf8.encode(data);
+                        res.data = data;
                         callCallback(null, res);
                     }
                 });
