@@ -1655,8 +1655,20 @@
                     "invalidmsg": "open, closed, all, default: open",
                     "description": "open, closed, or all"
                 },
-                "$head": null,
-                "$base": null,
+                "head": {
+                    "type": "String",
+                    "required": false,
+                    "validation": "",
+                    "invalidmsg": "",
+                    "description": "Filter pulls by head user and branch name in the format of user:ref-name."
+                },
+                "base": {
+                    "type": "String",
+                    "required": false,
+                    "validation": "",
+                    "invalidmsg": "",
+                    "description": "Filter pulls by base branch name."
+                },
                 "$page": null,
                 "$per_page": null,
                 "sort": {
