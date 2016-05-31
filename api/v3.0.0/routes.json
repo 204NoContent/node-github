@@ -892,6 +892,13 @@
                     "invalidmsg": "",
                     "description": "Login for the user that this issue should be assigned to."
                 },
+                "assignees": {
+                    "type": "Json",
+                    "required": false,
+                    "validation": "",
+                    "invalidmsg": "",
+                    "description": "Array of strings - Logins to assign to this issue."
+                },
                 "milestone": {
                     "type": "Number",
                     "required": false,
@@ -936,6 +943,13 @@
                     "validation": "",
                     "invalidmsg": "",
                     "description": "Login for the user that this issue should be assigned to."
+                },
+                "assignees": {
+                    "type": "Json",
+                    "required": false,
+                    "validation": "",
+                    "invalidmsg": "",
+                    "description": "Array of strings - Logins to assign to this issue."
                 },
                 "milestone": {
                     "type": "Number",
